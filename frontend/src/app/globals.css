@@ -8,6 +8,17 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  overflow-x: hidden;
+}
+
+.text-primary{
+  color: #EEE4B1;
+}
+.brdr-primary{
+  outline-color: #EEE4B1;
+}
+.bgg-primary{
+  background-color: #EEE4B1;
 }
 
 @media (prefers-color-scheme: dark) {

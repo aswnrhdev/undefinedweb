@@ -6,7 +6,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 
 export const Footer = () => {
     return (
-        <div className="flex flex-col items-center w-dvw  bg-black text-white mt-[500px] px-10 py-5">
+        <div className="flex flex-col items-center w-dvw  bg-black text-white px-10 py-5">
             <div className="w-full flex flex-col md:flex-row items-center md:justify-between">
                 <Link href={"/"} className="md:self-start max-md:mb-5">
                     <Image
