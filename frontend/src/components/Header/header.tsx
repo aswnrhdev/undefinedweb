@@ -2,7 +2,7 @@
 
 export const Header = () => {
   return (
-    <div>header</div>
+    <div>its header</div>
   )
 }
 
