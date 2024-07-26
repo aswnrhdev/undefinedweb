@@ -3,7 +3,7 @@ export const Banner = () => {
     <div className="h-96 bg-black flex flex-col items-center justify-center">
       <div className="flex flex-col text-white gap-3 items-center">
         <h1 className="text-center text-6xl font-black text-[#EEE4B1]">Echo Link</h1>
-        <p className="text-center opacity-70 text-[$]">
+        <p className="text-center opacity-70 text-[$] p-7">
           EchoLink is a startup platform dedicated to fulfilling client needs with precision.
           <br />
           Our skilled team excels in transforming imaginative designs into real-life web applications. We prioritize client satisfaction,

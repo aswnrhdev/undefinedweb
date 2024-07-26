@@ -8,12 +8,12 @@ import * as Yup from "yup";
 
 export const Contact = () => {
   return (
-    <div className="w-full flex">
-      <div className="w-2/3 bg-black flex justify-center items-center">
+    <div className="w-full md:flex">
+      <div className="md:w-2/3 w-full bg-black flex justify-center items-center">
         <div className=" h-4/5 w-4/5 mb-10">
           <div className="ml-5">
             <p className="text-3xl text-white">Give us a Hello!</p>
-            <p className="text-[#EEE4B1]">Let us know about your project</p>
+            <p className="text-primary">Let us know about your project</p>
           </div>
           <Formik
             initialValues={{
@@ -35,10 +35,10 @@ export const Contact = () => {
                 .min(2, "First name must be at least 2 characters")
                 .max(50, "First name cannot exceed 50 characters")
                 .required("First name is required"),
-              // lastName: Yup.string()
-              //   .min(2, "Last name must be at least 2 characters")
-              //   .max(50, "Last name cannot exceed 50 characters")
-              //   .required("Last name is required"),
+              lastName: Yup.string()
+                .min(2, "Last name must be at least 2 characters")
+                .max(50, "Last name cannot exceed 50 characters")
+                .required("Last name is required"),
               email: Yup.string()
                 .email("Enter a valid email")
                 .required("Email is required"),
@@ -74,7 +74,7 @@ export const Contact = () => {
                       <LabeledTextArea label='Details' id='details' value={values.details} onChange={handleChange} errorMsg={errors.details} touched={touched.details} />
                     </div>
                     <div className="flex justify-center w-full">
-                      <button className="border border-primary bg-transparent text-primary hover:bg-primary hover:text-black p-2 mt-4 w-1/3 transition-all duration-300 ease-in-out transform hover:">
+                      <button className="border border-primary bg-transparent text-primary hover:bg-primary hover:text-black p-2 mt-4 w-4/5 sm:w-1/3 transition-all duration-300 ease-in-out transform rounded-md">
                         Submit
                       </button>
                     </div>
@@ -86,10 +86,10 @@ export const Contact = () => {
           </Formik>
         </div>
       </div>
-      <div className="w-1/3 bg-black flex  justify-center items-center">
-        <div className="p-10 bg-black  border border-primary rounded-xl text-primary">
-          <p className="text-3xl mb-4"> Contact information</p>
-          <div className="ml-4">
+      <div className="md:w-1/3 w-full bg-black flex justify-center items-center xl:mr-0 mr-10">
+        <div className="p-10 bg-black md:border border-primary rounded-xl text-primary text-center">
+          <p className="text-2xl mb-4"> Contact information</p>
+          <div className="md:ml-4">
             <p className="">
               Kozhikode
             </p>
@@ -97,8 +97,9 @@ export const Contact = () => {
               Kerala, India 673001
             </p>
           </div>
-          <p className="text-3xl mt-10 mb-4"> Call us</p>
-          <div className="ml-4">
+          <hr className="border-primary my-10 md:border-black"/>
+          <p className="text-2xl mb-4"> Call us</p>
+          <div className="md:ml-4">
             <p className="">
               90678876828
             </p>
